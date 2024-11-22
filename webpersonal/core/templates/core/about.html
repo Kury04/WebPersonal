@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Enrique Paredes</h2>   
+        <p>Nacido en Edo. Méx y formado en CBT No.2 Lerma y la UTVT</p>
+        <p>He trabajado en proyectos de IA e IOT . Desde el 2020 a la fecha soy Desarrollador, Productor, Videografo, Técnico, Fotógrafo, Editor, Emprendedor, Estudiante.</p>
+    </div>
+</div>
+{% endblock %}
